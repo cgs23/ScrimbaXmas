@@ -44,3 +44,14 @@ console.log("Day 5 -> OK! Rev str is " + result5 );
 
 //-------------Day 6---------------
 
+const strs = ["abc", "", "aaa", "a", "zz"];
+const result6 = func.sortByLength(strs);
+expect(result6).to.be.eql(["", "a", "zz", "abc", "aaa"]);
+console.log("Day 6 -> OK! Sorted array is " + JSON.stringify(result6));
+
+//-------------Day 7---------------
+
+const value = "abcde";
+const result7 = func.countVowelConsonant(value);
+assert.equal(result7,8);
+console.log("Day 7 -> OK! Score is " + result7);

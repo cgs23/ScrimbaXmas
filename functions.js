@@ -44,3 +44,37 @@ export function reverseAString(str){
     return str.split("").reverse().join("");
 }
 
+// Day 6 - 'sorts the strings from shortest to longest'
+
+export function sortByLength(strs) {
+    strs.sort(function compare(a,b){
+        if(a.length < b.length){
+            return -1;
+        }
+        if(a.length > b.length){
+            return 1;
+        }
+        if(a.length==b.length){
+            return 0;
+        }
+        
+    })
+    return strs;
+}
+
+// Day 7 - 'returns total of vowels(1) and consonants(2) to be added'
+
+export function countVowelConsonant(str) {
+    var arr=str.split("");
+    const reducer = function (sum, letter){
+        if(letter=="a" || letter=="o" || letter=="e" || letter=="i" || letter=="y" || letter=="u"){
+            sum+=1;
+        }
+        else{
+            sum+=2;
+        }
+        return sum;
+    };
+    var sum = 0;
+    return arr.reduce(reducer, sum);
+  }
