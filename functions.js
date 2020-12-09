@@ -78,3 +78,18 @@ export function countVowelConsonant(str) {
     var sum = 0;
     return arr.reduce(reducer, sum);
   }
+
+  // Day 9 - 'returns sum of all odd Fibonnci numbers'
+  
+  export function sumOddFibonacciNumbers(num) {
+    var a=0, b=1, nextTerm, sum=1;
+    for(var i=1; i<=num; i++){
+        nextTerm = a+b;
+        a=b;
+        b=nextTerm;
+        if(nextTerm%2==1 && nextTerm<=num){
+            sum+=nextTerm;
+        }   
+    }
+    return sum;
+}
