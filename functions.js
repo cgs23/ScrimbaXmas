@@ -93,3 +93,19 @@ export function countVowelConsonant(str) {
     }
     return sum;
 }
+
+// Day 10 - 'returns largest product of adjacent values'
+
+export function adjacentElementsProduct(nums) {
+    let max, temp;
+    for(let i=1;i<nums.length;i++){
+        temp=nums[i]*nums[i-1];
+        if(max==null){
+            max=temp;
+        }
+        else if(temp>max){
+            max=temp;
+        }
+    }
+    return max;
+}

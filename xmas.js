@@ -57,7 +57,7 @@ assert.equal(result7,8);
 console.log("Day 7 -> OK! Score is " + result7);
 
 // Day 8 was skipped, was an CSS quiz aaand no, thanks :D
-console.log("Day 8 -> Not OK! CSS related, I'm good thanks kkthxbb");
+console.log("Day 8 -> Not OK! CSS related, I'm good kkthxbb");
 
 //-------------Day 9---------------
 
@@ -65,3 +65,10 @@ const num = 1000;
 const result9 = func.sumOddFibonacciNumbers(num);
 assert.equal(result9,1785);
 console.log("Day 9 -> OK! Sum is " + result9);
+
+//-------------Day 10---------------
+
+const nums = [3, 6, -2, -5, 7, 3];
+const result10 = func.adjacentElementsProduct(nums);
+assert.equal(result10,21);
+console.log("Day 10 -> OK! Max product is " + result10);
