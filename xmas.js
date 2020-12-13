@@ -72,3 +72,23 @@ const nums = [3, 6, -2, -5, 7, 3];
 const result10 = func.adjacentElementsProduct(nums);
 assert.equal(result10,21);
 console.log("Day 10 -> OK! Max product is " + result10);
+
+//-------------Day 11---------------
+var numbs = [5, 3, 6, 7, 9];
+let result11 = func.avoidObstacles(numbs);
+assert.equal(result11,4);
+console.log("Day 11 -> OK! Number is " + result11);
+
+//-------------Day 12---------------
+let timeStr = "19:36";
+let result12 = func.validTime(timeStr);
+assert.equal(result12, true);
+console.log("Day 12 -> OK! Time is formatted correctly: " + result12);
+
+
+//-------------Day 13---------------
+var numbs = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
+let index = 3;
+let result13 = func.extractEachKth(numbs, index);
+expect(result13).to.be.eql([1, 2, 4, 5, 7, 8, 10]);
+console.log("Day 13 -> OK! Filtered array is " + JSON.stringify(result13));

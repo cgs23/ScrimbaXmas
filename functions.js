@@ -109,3 +109,49 @@ export function adjacentElementsProduct(nums) {
     }
     return max;
 }
+
+// Day 11 - 'returns minimal number of jumps in between numbers'
+
+export function avoidObstacles(nums) {
+    nums.sort();
+    var n=2;
+    let check = function(value){
+        return (value%n)!=0
+    };
+    while(n<nums[nums.length-1]){
+        if (nums.every(check)){
+            return n;
+        }
+        n++;
+    }
+    console.log("Not found.");
+    return null;
+}
+
+// Day 12 - 'returns true for valid time'
+
+export function validTime(str) {
+    //  write code here.
+    var spl = str.split(":");
+    if(parseInt(spl[0])<=23 && parseInt(spl[0])>0 && parseInt(spl[1])<=59 && parseInt(spl[1])>0){
+        return true;
+    }
+    return false;
+}
+
+// Day 13 - 'returns largest positive integer possible for digit count'
+
+export function extractEachKth(nums, index) {
+    let filt = function(num, idx, arr){
+        var div = idx+1;
+     if((div%index)==0){
+         return false;
+     }
+     else{
+         return true;
+     }
+    };
+    var arr = nums.filter(filt);
+    return arr;
+}
+
