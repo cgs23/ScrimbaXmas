@@ -92,3 +92,9 @@ let index = 3;
 let result13 = func.extractEachKth(numbs, index);
 expect(result13).to.be.eql([1, 2, 4, 5, 7, 8, 10]);
 console.log("Day 13 -> OK! Filtered array is " + JSON.stringify(result13));
+
+//-------------Day 14---------------
+numbs = [2, 9, 1, 0];
+let result14=func.arrayMaximalAdjacentDifference(numbs);
+assert.equal(result14,8);
+console.log("Day 14 -> OK! Max distance is " + result14);

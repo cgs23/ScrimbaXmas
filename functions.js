@@ -155,3 +155,14 @@ export function extractEachKth(nums, index) {
     return arr;
 }
 
+// Day 14 - 'returns largest difference between adjacent values'
+
+export function arrayMaximalAdjacentDifference(nums) {
+    var diff = 0;
+    for(let i=1;i<nums.length;i++){
+        if(Math.abs(nums[i]-nums[i-1])>diff){
+            diff=Math.abs(nums[i]-nums[i-1]);
+        }
+    }
+    return diff;
+}
