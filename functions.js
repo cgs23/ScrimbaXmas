@@ -166,3 +166,16 @@ export function arrayMaximalAdjacentDifference(nums) {
     }
     return diff;
 }
+
+// Day 15 - 'CSS Stuff, not implemented'
+
+// Day 16 - 'insert dashes in between chars'
+
+export function insertDashes(arr) {
+    var spl = arr.split(" ");
+    var final = '';
+    for(let i=0; i<spl.length; i++){
+        final = final.concat(" ", spl[i].split("").join("-"));
+    }
+    return final.trim();
+}

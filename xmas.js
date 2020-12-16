@@ -98,3 +98,12 @@ numbs = [2, 9, 1, 0];
 let result14=func.arrayMaximalAdjacentDifference(numbs);
 assert.equal(result14,8);
 console.log("Day 14 -> OK! Max distance is " + result14);
+
+// Day 15 was skipped, was an CSS quiz aaand no, thanks :D
+console.log("Day 15 -> Not OK! CSS related, I'm good kkthxbb");
+
+//-------------Day 16---------------
+let val = "aba caba";
+let result16 = func.insertDashes(val);
+assert.equal(result16,"a-b-a c-a-b-a");
+console.log("Day 16 -> OK! Modified str is " + result16);
