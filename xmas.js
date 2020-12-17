@@ -107,3 +107,9 @@ let val = "aba caba";
 let result16 = func.insertDashes(val);
 assert.equal(result16,"a-b-a c-a-b-a");
 console.log("Day 16 -> OK! Modified str is " + result16);
+
+//-------------Day 17---------------
+let st = "cbacb";
+let result17 = func.differentSymbolsNaive(st);
+assert.equal(result17,3);
+console.log("Day 17 -> OK! # of unique characters are " + result17);

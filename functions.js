@@ -179,3 +179,10 @@ export function insertDashes(arr) {
     }
     return final.trim();
 }
+
+// Day 17 - 'returns count of unique characters'
+
+export function differentSymbolsNaive(str) {
+    let s = new Set(str.split(""));
+    return s.size;
+}
