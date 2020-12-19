@@ -113,3 +113,9 @@ let st = "cbacb";
 let result17 = func.differentSymbolsNaive(st);
 assert.equal(result17,3);
 console.log("Day 17 -> OK! # of unique characters are " + result17);
+
+//-------------Day 18---------------
+let st18 = "abcdefghijk";
+let result18 = func.alphabetSubsequence(st18);
+assert.equal(result18, true);
+console.log("Day 18 -> OK! Is the string in alphabetical order? -> " + result18);

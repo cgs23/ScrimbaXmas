@@ -186,3 +186,15 @@ export function differentSymbolsNaive(str) {
     let s = new Set(str.split(""));
     return s.size;
 }
+
+// Day 18 - 'returns count of unique characters'
+
+export function alphabetSubsequence(str) {
+    let arr = str.toLowerCase().split("");
+    for(let i=1; i<arr.length; i++){
+        if(str.charCodeAt(i)<=str.charCodeAt(i-1)){
+            return false;
+        }
+    }
+    return true;
+}
