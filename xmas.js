@@ -115,7 +115,10 @@ assert.equal(result17,3);
 console.log("Day 17 -> OK! # of unique characters are " + result17);
 
 //-------------Day 18---------------
+// Pending
+
+//-------------Day 19---------------
 let st18 = "abcdefghijk";
-let result18 = func.alphabetSubsequence(st18);
-assert.equal(result18, true);
-console.log("Day 18 -> OK! Is the string in alphabetical order? -> " + result18);
+let result19 = func.alphabetSubsequence(st18);
+assert.equal(result19, true);
+console.log("Day 19 -> OK! Is the string in alphabetical order? -> " + result19);
