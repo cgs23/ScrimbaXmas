@@ -122,3 +122,14 @@ let st18 = "abcdefghijk";
 let result19 = func.alphabetSubsequence(st18);
 assert.equal(result19, true);
 console.log("Day 19 -> OK! Is the string in alphabetical order? -> " + result19);
+
+//-------------Day 20---------------
+//Surface
+
+//-------------Day 21---------------
+let nums1 = [1, 2, 3];
+let nums2 = [10, 20, 30, 40];
+let v = 42;
+let result21 = func.sumOfTwo(nums1, nums2, v);
+assert.equal(result21,true);
+console.log("Day 21 -> OK! Pair of values found? -> " + result19);

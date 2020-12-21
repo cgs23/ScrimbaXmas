@@ -185,9 +185,12 @@ export function insertDashes(arr) {
 export function differentSymbolsNaive(str) {
     let s = new Set(str.split(""));
     return s.size;
+
 }
 
-// Day 18 - 'returns count of unique characters'
+// Day 18 - pending
+
+// Day 19 - 'returns count of unique characters'
 
 export function alphabetSubsequence(str) {
     let arr = str.toLowerCase().split("");
@@ -197,4 +200,20 @@ export function alphabetSubsequence(str) {
         }
     }
     return true;
+}
+
+// Day 20 - 'Surface'
+
+// Day 21 - 'returns true if a value can be found that by adding one number from each list'
+export function sumOfTwo(nums1, nums2, value) {
+    nums1 = nums1.filter(num => num <= value);
+    nums2 = nums2.filter(num => num <= value);
+    for(let i=0;i<nums1.length;i++){
+        for(let j=0;j<nums2.length;j++){
+            if(nums1[i]+nums2[j]==value){
+                return true;
+            }
+        }
+    }
+    return false;
 }
